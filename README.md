@@ -1,1 +1,1 @@
-# Blog_page
+#Life Coach Blog Page is a project aimed at providing insightful articles, motivational content, and practical advice to help individuals achieve their personal and professional goals. This blog page is designed with a clean and modern interface using HTML and CSS, ensuring an engaging and user-friendly experience for visitors.
