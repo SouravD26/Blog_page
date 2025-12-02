@@ -214,3 +214,65 @@ button:hover {
     justify-content: center;
     align-items: center;
 }
+
+/* Responsive media queries - add below existing styles */
+
+/* make images fluid */
+img, .pic-s {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Large tablets / small laptops */
+@media (max-width: 1024px) {
+    .head_line h1 { font-size: 30px; margin-left: 20px; margin-top: 18px; }
+    .head_line p { margin-left: 20px; font-size: 13px; }
+    .all { width: auto; padding: 0 20px; gap: 12px; }
+    .attract p { font-size: 48px; padding-top: 160px; }
+    .coach, .help { margin-left: 0; width: 100%; padding: 10px 20px; }
+    .main-s, .about { width: 100%; margin-left: 0; font-size: 22px; }
+    .pic-s, .main-t { width: 100%; height: auto; }
+    .work-m { padding: 0 20px; }
+}
+
+/* Tablets and large phones */
+@media (max-width: 768px) {
+    .header { flex-direction: column; align-items: flex-start; height: auto; padding: 10px 16px; }
+    .head { width: 100%; }
+    .all { width: 100%; justify-content: space-between; margin-top: 8px; }
+    .head_line h1 { font-size: 24px; margin-left: 0; }
+    .head_line p { margin-left: 0; }
+    .attract { background-position: center; }
+    .attract p { font-size: 36px; padding-top: 120px; }
+    .action, .button { width: 180px; padding: 12px 20px; }
+    .coach, .help { text-align: center; }
+    .work-m { flex-direction: column; gap: 20px; align-items: center; padding: 20px; }
+    .main-t, .pic-s { width: 100%; }
+    .body { flex-direction: column; align-items: stretch; height: auto; padding: 20px; gap: 20px; }
+    .news, .submit { width: 100%; }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    * { box-sizing: border-box; }
+    .head_line h1 { font-size: 20px; }
+    .head_line p { font-size: 12px; }
+    .all a { font-size: 14px; }
+    .attract p { font-size: 28px; padding-top: 80px; }
+    .action, .button { width: 160px; padding: 10px 16px; font-size: 14px; }
+    .about, .depth, .advice { font-size: 16px; }
+    .name { font-size: 22px; }
+    .advice-s { font-size: 22px; }
+    .link { gap: 10px; font-size: 20px; justify-content: flex-start; }
+    .last { padding: 16px; }
+    .submit input[type="text"], .submit textarea, .submit form { width: 100%; }
+    .pic-s { display: block; width: 100%; height: auto; margin: 0 auto; }
+    .body { padding: 12px; }
+    .last-s p { font-size: 12px; text-align: center; padding: 8px; }
+}
+
+/* Utility: ensure form controls are responsive */
+@media (max-width: 600px) {
+    .submit label { display: block; margin-bottom: 6px; }
+    .submit input[type="text"], .submit input[type="email"], .submit button { width: 100%; }
+}
